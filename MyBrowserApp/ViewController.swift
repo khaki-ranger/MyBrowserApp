@@ -21,10 +21,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let urlString = "http://dotinstall.com"
-        let urlRequest = URLRequest(url: URL(string: urlString)!)
-        self.browserWebView.loadRequest(urlRequest)
+        self.loadUrl(urlString: urlString)
         
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func getValidateUrl(urlString: String) -> URL? {
+        if URL(string: urlString) == nil {
+            print("Invalid URL")
+            return nil
+        }
+        return URL(string: urlString)
+    }
+    
+    func loadUrl(urlString: String) {
+        if let url = self.getValidateUrl(urlString: urlString) {
+            let urlRequest = URLRequest(url: url)
+            self.browserWebView.loadRequest(urlRequest)
+        }
     }
 
     override func didReceiveMemoryWarning() {
