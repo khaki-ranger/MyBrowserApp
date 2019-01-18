@@ -18,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LHI-u4-VSu">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LHI-u4-VSu">
                                 <rect key="frame" x="10" y="10" width="355" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="go"/>
                             </textField>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8M-uK-Zrq">
                                 <rect key="frame" x="0.0" y="98" width="375" height="525"/>
@@ -31,10 +31,10 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjp-mE-ZZC">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="Item" id="8AN-Yv-Jwe"/>
-                                    <barButtonItem title="Item" id="7P0-4p-CBi"/>
+                                    <barButtonItem title="←" id="8AN-Yv-Jwe"/>
+                                    <barButtonItem title="→" id="7P0-4p-CBi"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="wJy-mU-lFc"/>
-                                    <barButtonItem title="Item" id="1Tl-9W-fqY"/>
+                                    <barButtonItem systemItem="refresh" id="1Tl-9W-fqY"/>
                                 </items>
                             </toolbar>
                         </subviews>
